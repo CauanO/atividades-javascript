@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX005</title>
+  </head>
+  <body>
+    <h1>Trabalhando com números</h1>
+    <button onclick="clique()">Clique para calcular</button>
+    <script>
+      alert("Seja Bem-vindo(a) ao meu site!");
+      function clique() {
+        n1 = prompt("Digite um número:")
+        dobro = n1 * 2
+        metade = n1 / 2
+        document.getElementById("saudacao").innerHTML = `O dobro de ${n1} é ${dobro} e a metade é ${metade} !`
+      }
+    </script>
+    <p id="saudacao">Aqui vai aparecer o resultado</p>
+  </body>
+</html>

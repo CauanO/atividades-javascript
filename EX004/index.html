@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX004</title>
+</head>
+<body>
+    <h1>Trabalhando com dados</h1>
+    <button onclick="clique()">Clique para começar</button>
+    <script>
+        function clique() {
+            nome = prompt("Qual seu nome?");
+            document.getElementById("saudacao").innerHTML = `Olá, ${nome} É um grande prazer te conhecer!`
+        }
+    </script>
+    <p id="saudacao">Aqui vai aparecer o resultado</p>
+</body>
+</html>

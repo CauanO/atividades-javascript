@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX007</title>
+  </head>
+  <body>
+    <h1>Média do aluno</h1>
+    <button onclick="clique()">Calcular a média</button>
+    <script>
+      function clique() {
+        nome = prompt("Qual é o nome do aluno?");
+        nota1 = eval(prompt("Qual foi a primeira nota de " + nome + "?"));
+        nota2 = eval(prompt("Além de 0, qual foi a outra nota de " + nome + "?"));
+        media = (nota1 + nota2) / 2;
+
+        document.getElementById("saudacao1").innerHTML =
+          "Calculando a média final de " + nome;
+
+        document.getElementById("saudacao2").innerHTML = "As notas obitidas foram " + nota1 + " e " + nota2 + "."
+
+        document.getElementById("saudacao3").innerHTML =
+          "A média final será " + media + ".";
+      }
+    </script>
+    <p id="saudacao1">O resultado vai aparecer aqui...</p>
+    <p id="saudacao2"></p>
+    <p id="saudacao3"></p>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="p-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX010</title>
+</head>
+<body>
+    <h1>JavaScript Externo</h1>
+    <button onclick="chamab1()">Ação 1</button>
+    <button onclick="chamab2()">Ação 2</button>
+    <button onclick="chamab3()">Ação 3</button>
+    <button onclick="chamab4()">Ação 4</button>
+    <h2 id="valores">Aqui vou redistrar suas ações com os botões acima.</h2>
+    <section id="output">
+
+    </section>
+
+    <script>
+        var resp = document.getElementById('output')
+
+        function chamab1() {
+            resp.innerHTML += '<p>Clicou no primeiro botão</p>'
+        }
+        function chamab2() {
+            resp.innerHTML += '<p>Clicou no segundo botão</p>'
+        }
+        function chamab3() {
+            resp.innerHTML += '<p>Clicou no terceiro botão</p>'
+        }
+        function chamab4() {
+            resp.innerHTML += '<p>Clicou no quarto botão</p>'
+        }
+    </script>
+</body>
+
+</html>
